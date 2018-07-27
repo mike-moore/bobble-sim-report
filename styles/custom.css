@@ -1,32 +1,5 @@
 <style>
-/*
-Author: Neil Panchal
-http://neil.panchal.io
-
-New colors. These are a bit darker to allow for a better contrast. I started with Solarized palette and adjusted the colors as needed.
-
-
-YELLOW      = #ba9600			[181,137,0]
-ORANGE      = #BA5400			[186,84,0]
-RED         = #D43132			[176,47,48]
-MAGENTA     = #D14187			[209,65,135]
-VIOLET      = #793ac7			[144,89,212]
-BLUE        = #007ad0			[15,134,217]
-CYAN        = #009489			[0,163,151]
-GREEN       = #688A0A			[104,138,10]
-BROWN 		= #A05200			[156,98,48]
-
-BACKGROUND  = #F8F8F8
-DARK GRAY   = #383838
-MID GRAY    = #d8d8d8
-LIGHT GRAY  = #828282
-*/
-
-
-/* -- import Roboto Font ---------------------------- */
 @import "https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic";
-/* -- You can use this tables in Bootstrap (v3) projects. -- */
-/* -- Box model ------------------------------- */
 *,
 *:after,
 *:before {
@@ -39,7 +12,6 @@ LIGHT GRAY  = #828282
   -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
 }
-/* -- Material Design Table style -------------- */
 .table {
   width: 100%;
   max-width: 100%;
@@ -576,15 +548,6 @@ LIGHT GRAY  = #828282
   }
 }
 
-
-
-
-
-
-
-
-/* FONTS */
-
 @font-face {
  font-family: 'sf-display';
  font-weight: normal;
@@ -677,8 +640,6 @@ LIGHT GRAY  = #828282
 }
 
 
-/* GLOBALS */
-
 html {
     font-size: 16px !important;
 }
@@ -743,12 +704,10 @@ h1 {
     font-size: 1.6rem !important;
     font-weight: 300 !important;
     color: #000000 !important;
-    /* letter-spacing: 3px !important; */
     text-transform: normal !important;
     text-align: center !important;
     padding-top:  3rem;
     padding-bottom: 3rem;
-    /*border-bottom: 1px dotted #000000 !important;*/
 }
 
 h2 {
@@ -794,13 +753,11 @@ h6 {
     line-height: 1rem;
 }
 
-/* INTRO PAGE */
 
 .toolbar_info,
 .list-container {
     color: #828282;
 }
-/* NOTEBOOK */
 
 div#header-container {
     display: none !important;
@@ -825,15 +782,7 @@ div.input_prompt bdi, div.output_prompt bdi{
 	line-height: 0;
 	font-size:0;
 	color:transparent;
-	/*left: -10000px;*/
-	/*content: "\21E2";*/
 }
-/* Unicode Arrows
-Source: http://www.copypastecharacter.com/
-
-▼ ↪ ↩ ← ↑ → ↓ ↔ ↕ ↖ ↗ ↘ ↙ ↚ ↛ ↜ ↝ ↞ ↟ ↠ ↡ ↢ ↣ ↤ ↦ ↥ ↧ ↨ ↫ ↬ ↭ ↮ ↯ ↰ ↱ ↲ ↴ ↳ ↵ ↶ ↷ ↸ ↹ ↺ ↻ ⟲ ⟳ ↼ ↽ ↾ ↿ ⇀ ⇁ ⇂ ⇃ ⇄ ⇅ ⇆ ⇇ ⇈ ⇉ ⇊ ⇋ ⇌ ⇍ ⇏ ⇎ ⇑ ⇓ ⇐ ⇒ ⇔ ⇕ ⇖ ⇗ ⇘ ⇙ ⇳ ⇚ ⇛ ⇜ ⇝ ⇞ ⇟ ⇠ ⇡ ⇢ ⇣ ⇤ ⇥ ⇦ ⇨ ⇩ ⇪ ⇧ ⇫ ⇬ ⇭ ⇮ ⇯ ⇰ ⇱ ⇲ ⇴ ⇵ ⇶ ⇷ ⇸ ⇹ ⇺ ⇻ ⇼ ⇽ ⇾ ⇿ ⟰ ⟱ ⟴ ⟵ ⟶ ⟷ ⟸ ⟹ ⟽ ⟾ ⟺ ⟻ ⟼ ⟿ ⤀ ⤁ ⤅ ⤂ ⤃ ⤄ ⤆ ⤇ ⤈ ⤉ ⤊ ⤋ ⤌ ⤍ ⤎ ⤏ ⤐ ⤑ ⤒ ⤓ ⤔ ⤕ ⤖ ⤗ ⤘ ⤙ ⤚ ⤛ ⤜ ⤝ ⤞ ⤟ ⤠ ⤡ ⤢ ⤣ ⤤ ⤥ ⤦ ⤧ ⤨ ⤩ ⤪ ⤭ ⤮ ⤯ ⤰ ⤱ ⤲ ⤳ ⤻ ⤸ ⤾ ⤿ ⤺ ⤼ ⤽ ⤴ ⤵ ⤶ ⤷ ⤹ ⥀ ⥁ ⥂ ⥃ ⥄ ⥅ ⥆ ⥇ ⥈ ⥉ ⥒ ⥓ ⥔ ⥕ ⥖ ⥗ ⥘ ⥙ ⥚ ⥛ ⥜ ⥝ ⥞ ⥟ ⥠ ⥡ ⥢ ⥣ ⥤ ⥥ ⥦ ⥧ ⥨ ⥩ ⥪ ⥫ ⥬ ⥭ ⥮ ⥯ ⥰ ⥱ ⥲ ⥳ ⥴ ⥵ ⥶ ⥷ ⥸ ⥹ ⥺ ⥻ ➔ ➘ ➙ ➚ ➛ ➜ ➝ ➞ ➟ ➠ ➡ ➢ ➣ ➤ ➥ ➦ ➧ ➨ ➩ ➪ ➫ ➬ ➭ ➮ ➯ ➱ ➲ ➳ ➴ ➵ ➶ ➷ ➸ ➹ ➺ ➻ ➼ ➽ ➾ ⬀ ⬁ ⬂ ⬃ ⬄ ⬅ ⬆ ⬇ ⬈ ⬉ ⬊ ⬋ ⬌ ⬍ ⏎ ▲ ▼ ◀ ▶ ⬎ ⬏ ⬐ ⬑ ☇ ☈ ⍃ ⍄ ⍇ ⍈ ⍐ ⍗ ⍌ ⍓ ⍍ ⍔ ⍏ ⍖ ⍅ ⍆
-
-*/
 div.output_prompt {
     color: #000000;
 }
@@ -867,26 +816,6 @@ div.output_subarea {
 .rendered_html code {
     color: #828282;
 }
-
-/* .rendered_html table,
-.rendered_html th,
-.rendered_html tr,
-.rendered_html td {
-    border: 1px #828282 solid;
-    font-size: 0.75rem;
-    font-family: 'sf-mono', 'Menlo', 'Courier New', monospace;
-} */
-
-/* .rendered_html th,
-.rendered_html tr,
-.rendered_html td {
-    padding: 5px 10px;
-}
- */
-/* .rendered_html th {
-    font-weight: normal;
-    background: #f8f8f8;
-} */
 
 div.output_html {
     font-size: 0.75rem;
@@ -938,55 +867,6 @@ table.dataframe tbody tr td {
     padding-left: 1.0rem;
     padding-right: 1.0rem;
 }
-
-
-/* table, table.dataframe tr {
-    border: none;
-} */
-
-/* table td, table.dataframe td,
-table th, table.dataframe th {
-    margin: 0;
-    border: 1px solid white;
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-} */
-
-
-/* table th:not(:empty), table.dataframe th:not(:empty) {
-    background-color: #ffffff;
-    text-align: left;
-    padding: 0 10px;
-    font-style: italic
-} */
-
-
-/* table.dataframe tr:nth-child(2) th:empty, table.dataframe tr:nth-child(2) th:empty,
-table tr:nth-child(2) th:empty, table tr:nth-child(2) th:empty {
-    border-left: none;
-    border-right: 1px dotted #888;
-}
-table td, table.dataframe td {
-    background-color: #fff9ea;
-    color: #828282;
-    padding: 0.375em 1em;
-}
-table thead, table.dataframe thead {
-	color:  #828282;
-	padding: 10px 0;
-	font-weight: bold;
-	border-bottom: 1px solid #828282;
-}
-
-table thead th:not(:empty), table.dataframe thead th:not(:empty),
-table thead tr th, table.dataframe thead tr th {
-    background-color: #f8f8f8;
-    color: #BA5400;
-    text-align: left;
-    font-style: normal;
-    padding: 5px 10px;
-    border-bottom:  1px solid #828282;
-} */
 
 .table > thead > tr > td.info,
 .table > tbody > tr > td.info,
@@ -1111,7 +991,6 @@ div.output_stderr {
 }
 
 div.output_stderr pre {
-    /* color: #793ac7; */
 }
 
 .cm-s-ipython.CodeMirror {
@@ -1188,7 +1067,6 @@ div.output_stderr pre {
 }
 
 .cm-s-ipython span.cm-error {
-    /*background: #FFBDBD;*/
     color: #D43132;
 }
 
@@ -1209,8 +1087,6 @@ div.output_stderr pre {
     color: #828282 !important;
 }
 
-
-/* ANSI colors */
 
 .ansi-red-fg {
 	color: #D43132;
