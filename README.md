@@ -1,6 +1,4 @@
-===========================================
-Bobble-Bot Sim Development Notebook
-===========================================
+# Bobble-Bot Sim Development Notebook
 This repository holds the Jupyter notebook that was created during
 the development of the Bobble-Bot simulation. 
 
