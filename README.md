@@ -35,4 +35,5 @@ http://localhost:8890/tree#nbextensions_configurator
 ```shell
 jupyter-notebook
 ```
+Now visit http://localhost:8890 in your browser
 
