@@ -16,6 +16,12 @@ sudo apt-get -y install ipython ipython-notebook
 pip install jupyter
 ```
 
+### Run the jupyter-notebook server
+```shell
+jupyter-notebook
+```
+Now visit http://localhost:8890 in your browser
+
 ### Install the theme (optional)
 ```shell
 cd ~/.jupyter/custom/
@@ -30,10 +36,3 @@ jupyter contrib nbextension install --user
 Now go into the extensions configuration page and enable Table of Contents 2 and Code Folding
 
 http://localhost:8890/tree#nbextensions_configurator
-
-### Run the jupyter-notebook server
-```shell
-jupyter-notebook
-```
-Now visit http://localhost:8890 in your browser
-
